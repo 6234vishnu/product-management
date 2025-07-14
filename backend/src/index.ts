@@ -18,8 +18,8 @@ app.use(express.json({ limit: "2mb" }));
 // CORS Configuration
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  methods: "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+ 
 };
 app.use(cors(corsOptions));
 
