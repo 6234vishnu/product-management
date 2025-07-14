@@ -86,7 +86,7 @@ const ProductDashboard: React.FC = () => {
     },
   ];
 
-  if (loading) {
+  if (loading||!products) {
     return <LoadingSpinner />;
   }
 
